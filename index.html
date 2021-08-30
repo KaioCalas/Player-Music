@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontes dos ícones e de texto-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Music Player</title>
+</head>
+<body>
+    <!--Importando a foto-->
+    <img src="imagens/rock1.jpg">
+    <!--Descrição das Músicas-->
+    <div class="descricao">
+         <h2>Nome da Música</h2>
+         <i>Nome do Artista</i>
+    </div>
+    <!--Parte da interface da duração das músicas-->
+    <div class="duracao">
+        <div class="barra">
+            <progress value="0.0" max="1"></progress>
+            <div class="ponto"></div>
+        </div>
+        <div class="tempo">
+            <p class="start">0:00</p>
+            <p class="end">3:40</p>
+        </div>
+    </div>
+    <!--Botões do Player.-->
+    <div class="buttons">
+        <i class="fas fa-backward arrows anterior"></i>
+        <i class="fas fa-play button-play"></i>
+        <i class="fas fa-pause button-pause"></i>
+        <i class="fas fa-forward arrows proximo"></i>
+    </div>
+    <!--Música Inicial ao abrir-->
+    <audio src="musicas/Elevators Need Rock Too - Spence.mp3"></audio>
+
+    <!-- Importação do arquivo script.js-->
+    <script src="script.js"></script>
+</body>
+</html>

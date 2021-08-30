@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #333;
+    color: #ddd;
+    font-family: 'Montserrat', sans-serif;
+}
+   
+/*tamanho e largura da imagem*/
+img {
+    width: 300px;
+    height: 300px;
+}
+/*largura da descrição das músicas*/
+.descricao {
+    width: 300px;
+
+}
+/*Alterando a margem do nome da música*/
+h2 {
+    margin-bottom: 5px;
+}
+/*Alterando a largura e margem do topo da duração da música*/
+.duracao{
+    width: 300px;
+    margin-top: 25px;
+}
+/*Alterando a aparência e tamanho da barra de duração*/
+.barra {
+    width: 300px;
+    height: 6px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+/*Alterando a cor e tamanho da barra de progresso*/
+progress {
+    height: 6px;
+    width: 0%;
+    background-color: #333;
+}
+/*Alterando a aparência e tamanho do circulo na barra de progresso*/
+.ponto {
+    width: 20px;
+    height:20px;
+    background-color: rgb(216, 214, 214);
+    border-radius: 50%;
+    margin-left: -10px;
+}
+
+/*Alterando a posição do tempo na tela*/
+.tempo {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+
+/*Alterando a posição e tamanho dos botões*/
+.buttons{
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+/*Alterando o tamanho da fonte dos botões de pause e play*/
+.button-play,
+.button-pause {
+    font-size: 50px;   
+}
+/*Alterando o tamanho da fonte dos botões de setas.*/
+.arrows {
+    font-size: 40px;
+}
+/*Colocando o botão de pause "invisivel" para por a interação com java script*/
+.button-pause {
+    display: none;
+}
+
